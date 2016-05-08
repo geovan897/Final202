@@ -28,6 +28,7 @@ class clientDB
 	$this->db->close();
     }
     /// trying to see if this will work
+    /*
     public function teams(){
       $query = "select * from teams order by NumberofTitles DESC;";
       $results = $this->db->query($query);
@@ -39,6 +40,7 @@ class clientDB
       <th>TopScorer</th>
       <th>NumberofTitles</th>
       </tr>";
+      
       while ($row = mysqli_fetch_assoc($results)){
       
       echo "<tr>";
@@ -48,8 +50,9 @@ class clientDB
       echo "<td>".$row['NumberofTitles']."</td>";
       echo "</tr>";
     }
-    echo "</table>";
+      echo "</table>";
     }
+    */
     /// function works
     public function leagues(){
       $query = "select * from LeagueInfo order by LeagueRating DESC;";
