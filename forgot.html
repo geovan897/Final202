@@ -1,20 +1,51 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta char-set="utf-8">
-<title>Forgot Password</title>
-</head>
-<body>
-
-<form action="rpc.php" method="post" >
-
-<p>username: <input type="text" name="username" /></p>
-<p>recovery phrase : <input type ="password" name="recovery" /></p>
-<p>new password: <input type ="password" name ="newpassword" /></p>
-
-<input type="submit" name="request" value="forgot"/>
-
-
-</form>
-</body>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Forgot Password</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<!--login modal-->
+<div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+          <h1 class="text-center">Forgot Password</h1>
+      </div>
+      <div class="modal-body">
+          <form class="form col-md-12 center-block" action="rpc.php" method="post">
+            <div class="form-group">
+              <input type="text" name="username" class="form-control input-lg" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" name="recovery"  class="form-control input-lg" placeholder="Recovery phrase">
+            </div>
+            <div class="form-group">
+              <input type="password" name ="newpassword" class="form-control input-lg" placeholder="New password">
+            </div>
+            <div class="form-group">
+			  <a href="index.html" class="btn btn-primary-outline btn-lg btn-block" role="button">Go Back</a>
+             <input type="submit" name="request" class="btn btn-warning btn-lg btn-block" value="forgot">
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+  </div>
+  </div>
+</div>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
